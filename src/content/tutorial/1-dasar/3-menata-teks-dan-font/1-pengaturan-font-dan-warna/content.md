@@ -1,66 +1,102 @@
 ---
 type: lesson
-title: Definisi dan Fungsi CSS
+title: Penggunaan Warna pada CSS
 focus: /index.html
 ---
 
-## Pengertian CSS (Cascading Style Sheets)
+## Warna pada CSS (Cascading Style Sheets)
 
-CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain tampilan halaman web. CSS memungkinkan kita untuk mengatur tata letak, warna, dan ukuran elemen pada halaman web.
+Dengan CSS, Anda dapat menerapkan warna pada elemen HTML, seperti teks, latar belakang, dan border. Anda dapat menggunakan format warna HEX, RGB, HSL, atau kata kunci warna.
 
-CSS bekerja dengan cara memilih elemen HTML yang akan diubah tampilannya, lalu menentukan bagaimana tampilan elemen tersebut. CSS dapat diletakkan pada file terpisah dari file HTML, atau langsung ditulis pada file HTML.
+RGB mendefinisikan intensitas warna merah, hijau, dan biru, sedangkan format HEX menggunakan kombinasi enam digit heksadesimal, yang memungkinkan desainer membuat tampilan web yang menarik dan dinamis.
 
-## Fungsi CSS dalam pengembangan web
+## Cara Memilih Warna pada CSS
 
-CSS memiliki beberapa fungsi dalam pengembangan web, yaitu:
+Berikut beberapa cara yang bisa anda terapkan untuk memilih sebuah warna:
 
-1. **Mempercantik tampilan halaman web**: CSS memungkinkan kita untuk mengatur tata letak, warna, dan ukuran elemen pada halaman web sehingga tampilan halaman web menjadi lebih menarik.
-
-2. **Memisahkan antara konten dan tampilan**: Dengan menggunakan CSS, kita dapat memisahkan antara konten dan tampilan pada halaman web. Hal ini memungkinkan kita untuk mengubah tampilan halaman web tanpa harus mengubah konten HTML.
-
-3. **Meningkatkan pengalaman pengguna**: Dengan menggunakan CSS, kita dapat membuat halaman web menjadi lebih menarik dan mudah dibaca oleh pengguna.
-
-4. **Meningkatkan SEO**: CSS memungkinkan kita untuk mengoptimalkan tampilan halaman web sehingga lebih mudah diindeks oleh mesin pencari.
-
-5. **Meningkatkan responsivitas**: CSS memungkinkan kita untuk membuat halaman web menjadi responsif, sehingga tampilan halaman web dapat menyesuaikan dengan berbagai perangkat dan ukuran layar.
-
-
-:::info
-Saat artikel ini ditulis, Versi terbaru dari CSS adalah CSS3
-:::
-
-
-
-## Cara Kerja CSS
-
-CSS bekerja dengan cara memilih elemen HTML yang akan diubah tampilannya, lalu menentukan bagaimana tampilan elemen tersebut. CSS dapat diletakkan pada file terpisah dari file HTML, atau langsung ditulis pada file HTML.
-
-Contoh penggunaan CSS pada file HTML:
+1. **Menggunakan Kode HEX**: Anda dapat memilih warna hijau dengan menentukan kode HEX seperti contoh di bawah ini:
 
 ```html
-<!DOCTYPE html>
-<html>
-<head>
   <style>
     h1 {
-      color: blue;
+      color: #33FF33;
     }
   </style>
-</head>
-<body>
-  <h1>Hello, World!</h1>
-</body>
-</html>
 ```
 
-Pada contoh di atas, CSS digunakan untuk mengubah warna teks pada elemen `h1` menjadi biru.
+Pada kode HEX, setiap pasangan digit mewakili intensitas dari warna merah, hijau, dan biru (RGB) dengan rentang dari 00 hingga FF (0 hingga 255 dalam desimal):
+
+- 2 digit pertama (#33FF33) mewakili intensitas merah. Dalam contoh ini, intensitasnya rendah, yaitu 33 (51 dalam desimal).
+- 2 digit tengah (#33FF33) mewakili intensitas hijau. Dengan nilai FF (255 dalam desimal), ini berarti hijau ditampilkan dengan intensitas penuh.
+- 2 digit terakhir (#33FF33) mewakili intensitas biru. Sama seperti merah, nilainya rendah di sini, yaitu 33.
+
+Jadi, kode ini menghasilkan warna hijau terang, karena hijau memiliki intensitas paling tinggi sementara merah dan biru memiliki intensitas rendah.
+
+2. **Menggunakan Format RGB**: Untuk memilih warna biru muda menggunakan format RGB, Anda bisa menuliskannya seperti ini:
+
+```html
+  <style>
+    h1 {
+      color: rgb(0, 128, 255);
+    }
+  </style>
+```
+
+Pada format RGB, setiap nilai mewakili intensitas warna merah, hijau, dan biru dengan rentang angka dari 0 hingga 255:
+
+- Nilai pertama rgb(**0**, 128, 255) mewakili intensitas merah. Di sini nilainya 0, artinya tidak ada warna merah.
+- Nilai kedua rgb(0, **128**, 255) mewakili intensitas hijau. Nilainya 128, menunjukkan hijau memiliki intensitas sedang.
+- Nilai ketiga rgb(0, 128, **255**) mewakili intensitas biru. Dengan nilai 255, biru ditampilkan dengan intensitas penuh.
+
+Kombinasi ini menghasilkan warna biru muda, karena biru sangat dominan sementara hijau sedang, dan tidak ada warna merah.
+
+3. **Menggunakan Format HSL**: Jika ingin menggunakan format HSL untuk menentukan warna hijau tua, contoh penggunaannya adalah sebagai berikut:
+
+```html
+  <style>
+    h1 {
+      color: hsl(120, 100%, 25%);
+    }
+  </style>
+```
+
+Pada format HSL (Hue, Saturation, Lightness):
+
+<!-- Kok gak muncul? -->
+![HSL Color Wheel](https://web.dev/static/learn/css/color/image/a-color-wheel-labels-de-9fb8c5add6dad.svg)
+
+- Nilai pertama hsl(**120**, 100%, 25%) adalah hue (corak warna), diukur dalam derajat dari 0 hingga 360. Nilai 120 menunjukkan warna hijau.
+- Nilai kedua hsl(120, **100%**, 25%) adalah saturation (kejenuhan), yang menentukan seberapa murni warna tersebut. Dengan 100%, warna hijau sangat jenuh atau murni.
+- Nilai ketiga hsl(120, 100%, **25%**) adalah lightness (kecerahan), yang mengontrol kegelapan atau kecerahan warna. Dengan 25%, warna ini cenderung gelap.
+
+Kombinasi ini menghasilkan hijau tua yang intens, karena hue-nya tepat pada warna hijau, dengan kejenuhan penuh dan tingkat kecerahan rendah.
+
+4. **Menuliskan Kata Kunci**: Anda juga bisa menggunakan kata kunci warna seperti 'chocolate' untuk memberikan warna coklat pada teks:
+
+```html
+  <style>
+    h1 {
+      color: chocolate;
+    }
+  </style>
+```
+
+Dalam penggunaan kata kunci warna, Anda cukup menuliskan nama warna yang sudah ditentukan oleh CSS:
+
+- Kata kunci pertama color: **chocolate**; secara langsung menggunakan nama warna coklat. Nama ini sudah didefinisikan dalam spesifikasi CSS dan dapat digunakan tanpa perlu menyebutkan nilai RGB atau HEX.
+
+Menggunakan kata kunci warna memberikan cara yang cepat dan mudah untuk menetapkan warna pada elemen tanpa perlu menghitung nilai numerik, sehingga cocok untuk penggunaan yang sederhana.
+
+
 
 
 ## Tantangan
 
-Ubah warna teks pada elemen `h1` pada contoh di atas menjadi merah.
+Ubah warna 'h1' menjadi warna merah gelap dari Kata Kunci 'darkred' menjadi kode HEX '#8B0000'
 
 
 ## Kesimpulan
 
-CSS adalah bahasa yang digunakan untuk mendesain tampilan halaman web. CSS memungkinkan kita untuk mengatur tata letak, warna, dan ukuran elemen pada halaman web. Ada beberapa cara untuk menggunakan CSS pada halaman web, yaitu internal CSS, external CSS, dan inline CSS.
+Dalam CSS, Anda dapat menerapkan warna pada elemen HTML menggunakan berbagai format, termasuk HEX, RGB, HSL, dan kata kunci warna. Setiap format memiliki cara unik untuk menentukan intensitas warna.
+
+Memahami cara memilih warna yang tepat memungkinkan Anda untuk menciptakan tampilan yang menarik dan dinamis pada halaman web, memudahkan penataan elemen sesuai kebutuhan desain.
