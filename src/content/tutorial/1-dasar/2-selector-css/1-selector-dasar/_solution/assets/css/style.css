@@ -1,0 +1,23 @@
+/* Mengatur style untuk elemen dengan ID "title" */
+#title {
+    color: blue;
+    font-size: 32px;
+}
+
+/* Mengatur style untuk elemen dengan class "title" */
+.title {
+    color: red;
+    font-size: 18px;
+}
+
+/* Mengatur style untuk elemen dengan class "description" */
+.description {
+    color: green;
+    font-size: 18px;
+}
+
+/* Mengatur style untuk elemen dengan ID "cta" */
+#cta {
+    color: yellow;
+    font-size: 18px;
+}
