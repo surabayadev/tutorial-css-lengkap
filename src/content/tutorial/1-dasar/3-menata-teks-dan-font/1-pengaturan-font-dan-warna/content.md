@@ -85,14 +85,16 @@ Dalam penggunaan kata kunci warna, Anda cukup menuliskan nama warna yang sudah d
 
 - Kata kunci pertama color: **chocolate**; secara langsung menggunakan nama warna coklat. Nama ini sudah didefinisikan dalam spesifikasi CSS dan dapat digunakan tanpa perlu menyebutkan nilai RGB atau HEX.
 
+:::tip
+Untuk mengetahui semua kata kunci warna, [Kunjungi link berikut](https://web.dev/learn/css/color?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fcss%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fcss%2Fcolor#color_keywords).
+:::
+
 Menggunakan kata kunci warna memberikan cara yang cepat dan mudah untuk menetapkan warna pada elemen tanpa perlu menghitung nilai numerik, sehingga cocok untuk penggunaan yang sederhana.
-
-
 
 
 ## Tantangan
 
-Ubah warna 'h1' menjadi warna merah gelap dari Kata Kunci 'darkred' menjadi kode HEX '#8B0000'
+Ubah warna `h1` menjadi warna merah gelap dari Kata Kunci `darkred` menjadi kode HEX `#8B0000`
 
 
 ## Kesimpulan
