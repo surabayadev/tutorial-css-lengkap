@@ -63,7 +63,7 @@ Kombinasi ini menghasilkan warna biru muda, karena biru sangat dominan sementara
 Pada format HSL (Hue, Saturation, Lightness):
 
 <!-- Kok gak muncul? -->
-![HSL Color Wheel](https://web.dev/static/learn/css/color/image/a-color-wheel-labels-de-9fb8c5add6dad.svg)
+![HSL Color Wheel](./_assets/HSL-color-wheel.png)
 
 - Nilai pertama hsl(**120**, 100%, 25%) adalah hue (corak warna), diukur dalam derajat dari 0 hingga 360. Nilai 120 menunjukkan warna hijau.
 - Nilai kedua hsl(120, **100%**, 25%) adalah saturation (kejenuhan), yang menentukan seberapa murni warna tersebut. Dengan 100%, warna hijau sangat jenuh atau murni.
