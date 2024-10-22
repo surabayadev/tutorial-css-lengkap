@@ -87,4 +87,5 @@ Selain menggunakan unit-unit yang sudah disebutkan diatas, Anda dapat memberikan
 
 ## Tantangan
 
-Ubah tampilan `h1` agar menjadi font `Cursive` dan memiliki ukuran sebesar `32px`. Sedangkan `p` menjadi font `sans-serif` dan memiliki ukuran sebesar `14px`!
+- Ubah tampilan `h1` agar menjadi font `Cursive` dan memiliki ukuran sebesar `32px`!
+- Sedangkan `p` menjadi font `sans-serif` dan memiliki ukuran sebesar `14px`!
