@@ -1,6 +1,30 @@
-# TutorialKit Starter
+# Tutorial CSS Lengkap
 
-👋 Welcome to TutorialKit!
+SurabayaDev membuat kelas tutorial lengkap CSS untuk pemula hingga mahir dalam bahasa Indonesia. Tutorial ini akan membahas dasar-dasar CSS, layout dan positioning, responsivitas, animasi, hingga tips dan trik lanjutan dalam pengembangan web.
+
+![image.png](image.png)
+
+## Daftar Materi
+
+Daftar materi CSS selengkapnya dapat dilihat di [daftar materi](https://github.com/surabayadev/tutorial-css-lengkap/issues/1).
+
+Apabila ada materi yang ingin ditambahkan, silakan untuk membuat komentar di issue tersebut.
+
+## Kontribusi
+
+Kami mengundang siapa saja untuk berkontribusi dalam pengembangan tutorial ini. Silakan ikuti panduan kontribusi di [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Repository ini juga terbuka untuk event Hacktoberfest 2024.
+
+## Lisensi
+
+Tutorial ini dilisensikan di bawah [Lisensi MIT](LICENSE).
+
+<br><br>
+
+# TutorialKit 
+
+We are using TutorialKit to create this tutorial.
 
 This README includes everything you need to start writing your tutorial content quickly.
 
