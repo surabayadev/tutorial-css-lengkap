@@ -1,7 +1,7 @@
 ---
 type: lesson
 title: Definisi dan Fungsi CSS Flexbox
-focus: /index.html
+focus: /styles.css
 ---
 
 ## Pengertian CSS Flexbox
@@ -36,7 +36,7 @@ Berikut merupakan contoh penggunaan Flexbox
 
 File HTML :
 ```html
-<-- index.html -->
+/* index.html */
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,13 +56,9 @@ File HTML :
 
 File CSS :
 ```css
-<-- style.css -->
+/* style.css */
 .flex-container {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    height: 100vh;
     background-color: white;
   }
   
@@ -76,12 +72,16 @@ File CSS :
     border-radius: 5px;
   }
 ```
-Pada `flex-container`, styling yang diberikan dapat berpengaruh terhadap elemen `flex-item`. Hasilnya 3 box tersusun dengan bentuk kolom, dan berada di bagian kiri layar.
+Pada `flex-container`, styling yang diberikan sangat berpengaruh terhadap elemen `flex-item`.
 
 
 ## Tantangan
 
-Buat 3 box tadi berada di tengah secara berbaris.
+Buat 3 persegi panjang yang ada pada kode disamping menjadi tersusun berbaris.
+
+:::info
+Fokus pada susunan saja, abaikan ukuran aslinya.
+:::
 
 
 ## Kesimpulan
