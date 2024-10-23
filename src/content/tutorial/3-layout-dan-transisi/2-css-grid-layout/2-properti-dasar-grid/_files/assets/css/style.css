@@ -1,0 +1,43 @@
+.sidebar {
+  grid-area: sidebar;
+  background-color: #3498db;
+}
+
+.header {
+  grid-area: header;
+  background-color: #f1c40f;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #3498db;
+}
+
+.main {
+  grid-area: main;
+  background-color: #2ecc71;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #e74c3c;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer .";
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.grid-item {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
