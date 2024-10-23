@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Grid Container */
+.gallery {
+  padding: 10;
+}
+
+/* Product Card dengan Flexbox */
+.product-card {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.product-card .image {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-card p {
+  color: #2196f3;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  padding: 8px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #1976d2;
+}
