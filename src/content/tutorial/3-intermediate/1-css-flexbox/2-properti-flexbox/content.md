@@ -1,65 +1,113 @@
 ---
 type: lesson
-title: Struktur Dasar CSS
+title: Properti Flexbox
 focus: /index.html
 ---
 
-## Sintaks dasar CSS: selector, property, dan value
+## Properti Flexbox
 
-CSS terdiri dari tiga bagian utama, yaitu selector, property, dan value. Berikut adalah penjelasan singkat tentang ketiga bagian tersebut:
+Sebelumnya di pengantar flexbox, kita dikenalkan beberapa properti flexbox. 
 
-1. **Selector**: Selector adalah bagian yang digunakan untuk memilih elemen HTML yang akan diubah tampilannya. Selector dapat berupa nama elemen, class, id, atau pseudo-class.
+Penting kita menggunakan `display:flex` kalau ingin container kita menjadi blok dan mengakses properti flexbox. Saat ini kita akan mengenal properti flexbox yang sering digunakan dalam pembuatan website. Diantaranya :
 
-```css "h1"
-h1 {
-  color: blue;
-}
-```
-
-Pada contoh di atas, `h1` adalah selector yang digunakan untuk memilih elemen `h1` pada halaman web.
-
-2. **Property**: Property adalah bagian yang digunakan untuk menentukan tampilan elemen yang dipilih. Property dapat berupa warna, ukuran, tata letak, dan sebagainya.
-
-```css "color"
-h1 {
-  color: blue;
-}
-```
-
-Pada contoh di atas, `color` adalah property yang digunakan untuk mengubah warna teks pada elemen `h1` menjadi biru.
-
-3. **Value**: Value adalah bagian yang
-
-```css "blue;"
-h1 {
-  color: blue;
-}
-```
-
-Pada contoh di atas, `blue` adalah value dari property `color` yang digunakan untuk mengubah warna teks pada elemen `h1` menjadi biru.
-
-## Aturan penulisan CSS
-
-Ada beberapa aturan penulisan CSS yang perlu diperhatikan, yaitu:
-
-1. **Case Sensitivity**: CSS bersifat case sensitive, artinya penulisan huruf besar dan kecil akan berpengaruh pada hasil akhir. Sebaiknya gunakan penulisan huruf kecil untuk memudahkan pembacaan.
-
-2. **Whitespace**: Whitespace (spasi, tab, dan baris baru) tidak berpengaruh pada hasil akhir CSS. Namun, sebaiknya gunakan whitespace untuk memudahkan pembacaan.
-
-3. **Urutan** : CSS mengeksekusi aturan dari atas ke bawah. Jika terdapat aturan yang sama, aturan yang ditulis terakhir yang akan dieksekusi.
-
-## Komentar dalam CSS
-
-Komentar digunakan untuk memberikan penjelasan pada kode CSS. Komentar tidak akan dieksekusi oleh browser dan hanya berfungsi sebagai catatan untuk pengembang.
+1. **Flex-Direction**: `flex-direction` merupakan sebuah properti flexbox yang digunakan untuk mengatur arah tata letak dari flex items. Nilai properti untuk `flex-direction` ada `row`, `row-reverse`, `column`, dan `column-reverse`.
 
 ```css
-/* Ini adalah komentar dalam CSS */
+.flex-container {
+  display: flex;
+  flex-direction: row | row-reverse | column | column-reverse;
+}
+```
+Lalu apa arti dari value tersebut? Nah ada tabel nih untuk penjelasan tiap value yang dibeirkan
 
-h1 {
-  color: blue; /* Ini adalah komentar pada property color */
+| Value | Keterangan |
+|----------|----------|
+|`row` (default)|Elemen yang diatur secara horizontal atau berbaris dari kanan ke kiri|
+|`row-reverse`|Elemen yang diatur secara horizontal atau berbaris dari kiri ke kanan|
+|`column`|Element yang diatur secara vertikal atau berkolom dari atas ke bawah|
+|`column-reverse`|Element yang diatur secara vertikal atau berkolom dari bawah ke atas|
+
+Masih belum tergambar? berikut merupakan contoh gambar untuk mempermudah pemahaman
+
+![flex-direction row value](./_assets/images/flex-direction-row-type.png)
+
+![flex-direction column value](./_assets/images/flex-direction-column-type.png)
+
+2. **Justify-Content**: `justify-content` merupakan sebuah properti flexbox yang digunakna untuk mengatur bagaimana flex items didistribusikan. Nilai properti untuk `justify-content` ada `flex-start`,`flex-end`,`center`,`space-between`,`space-around`,`space-evenly`
+
+```css
+.flex-container {
+  display: flex;
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
 }
 ```
 
+Sama seperti diatas, ada tabel untuk menjelaskan value dari `justify-content`
+
+| Value | Keterangan |
+|----------|----------|
+|`flex-start` (default)|Elemen diatur dari tepi awal kontainer|
+|`flex-end`|Elemen diatur dari tepi akhir kontainer|
+|`flex-center`|Element diatur di tengah kontainer|
+|`space-between`|Spasi di antara elemen sama, tanpa spasi di tepi|
+|`space-around`|Spasi di antara elemen sama, dengan spasi di tepi juga|
+|`space-evenly`|Spasi di antara elemen dan tepi sama|
+
+Masih belum tergambar bagaimana value `justify-content` bekerja, tenang ada gambar dibawah ini untuk mempermudah pemahaman
+
+![justify-content flex type](./_assets/images/justify-content-flex-type.png)
+
+![justify-content space type](./_assets/images/justify-content-space-type.png)
+
+3. **Align-Items**: `align-items` merupakan sebuah properti flexbox yang mengatur pemerataan flex items sepanjang Cross Axis/tegak lurus dengan Main Axis. Nilai properti `align-items` ada `stretch`, `flex-start`, `flex-end`, `center`, dan `baseline` 
+
+```css
+.flex-container {
+  display: flex;
+  align-items: stretch | flex-start | flex-end | center | baseline 
+}
+```
+
+Sama seperti sebelumnya, ada tabel yang menjelaskan value dari `align-items`
+
+| Value | Keterangan |
+|----------|----------|
+|`stretch` (default)|Flex items akan memenuhi kontainer|
+|`flex-start`|Elemen diatur di awal Cross Axis|
+|`flex-end`|Element diatur di akhir Cross Axis|
+|`center`|Element diatur di tengah Cross Axis|
+|`baseline`|Element diatur berdasarkan posisi garis dasar teks|
+
+Mungkin agak membingungkan terkait Cross Axis ini bagaimana, tapi ada gambar untuk mempermudah pemahaman value `align-items` ini
+
+![align-items](./_assets/images/align-items.png)
+
+4. **Align-Self**: `align-self` merupakan sebuah properti flexbox yang digunakan untuk mengatur salah satu flex item yang flex containernya memiliki properti align-items. Nilai properti `align-self` ada `auto`, `stretch`, `flex-start`, `flex-end`, `center`, dan `baseline`
+
+```css
+.flex-container {
+  display: flex;
+  align-items: stretch //sebagai contoh 
+}
+
+.flex-items2 {
+  align-self: auto | stretch | flex-start | flex-end | center | baseline
+}
+```
+Sama seperti sebelumnya, ada tabel yang menjelaskan value dari `align-self`
+
+| Value | Keterangan |
+|----------|----------|
+|`auto` (default)|Mengikuti aturan align-items dari kontainer|
+|`stretch`|Elemen memenuhi kontainer|
+|`flex-start`|Elemen berada di awal Cross Axis|
+|`flex-end`|Element berada di akhir Cross Axis|
+|`center`|Element berada di tengah Cross Axis|
+|`baseline`|Element berada berdasarkan posisi garis dasar teks|
+
+Agar mudah dalam memahami `align-self` bekerja, berikut merupakan gambar untuk mempermudah pemahaman. Perhatikan unsur kotak nomor 2
+
+![align-self](./_assets/images/align-self.png)
 
 ## Tantangan
 
