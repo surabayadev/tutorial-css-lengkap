@@ -127,4 +127,8 @@ Set tampilan layout grid dengan menggunakan properti-properti yang telah dipelaj
 "footer footer ."
 ```
 
+Berikut preview tampilan yang diharapkan:
+
+![Preview hasil tantangan](./_assets/preview-hasil-tantangan.png)
+
 Selamat mencoba!

@@ -92,10 +92,16 @@ Berikut adalah contoh layout yang dibuat dengan menggunakan Grid dan Flexbox.
 
 #### Hasil
 
-![Contoh layout dengan Grid dan Flexbox](./contoh-layoud-grid-flexbox.png)
+![Contoh layout dengan Grid dan Flexbox](./_assets/contoh-layoud-grid-flexbox.png)
 
 ## Tantangan
 
 1. Ubah file `index.html`, tambahkan produk baru di dalam `.gallery` menjadi total 6 produk dengan masing-masing bernama sesuai urutan.
 2. Ubah file `style.css` dengan menambahkan pada `.gallery` menjadi grid dengan 3 kolom dengan lebar masing-masing 1fr dan gap 20px.
 3. Ubah file `style.css` dengan menambahkan pada `.product-card` menjadi flexbox dengan direction column dan seluruh isinya berada di tengah.
+
+Berikut preview tampilan yang diharapkan:
+
+![Preview hasil tantangan](./_assets/preview-hasil-tantangan.png)
+
+Selamat mencoba!
