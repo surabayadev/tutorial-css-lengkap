@@ -1,7 +1,7 @@
 ---
 type: lesson
 title: Properti Flexbox
-focus: /index.html
+focus: /styles.css
 ---
 
 ## Properti Flexbox
@@ -87,7 +87,7 @@ Mungkin agak membingungkan terkait Cross Axis ini bagaimana, tapi ada gambar unt
 ```css
 .flex-container {
   display: flex;
-  align-items: stretch //sebagai contoh 
+  align-self: stretch //sebagai contoh 
 }
 
 .flex-items2 {
@@ -109,6 +109,27 @@ Agar mudah dalam memahami `align-self` bekerja, berikut merupakan gambar untuk m
 
 ![align-self](./_assets/images/align-self.png)
 
+5. **Flex-Wrap**: `flex-wrap` merupakan sebuah properti flexbox yang digunakan untuk mengatur apakah flex items dibungkus ke baris baru jika mereka tidak muat dalam satu baris. Nilai properti `flex-wrap` ada `nowrap`, `wrap`, dan `wrap-reverse`.
+
+```css
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap | wrap | wrap-reverse 
+}
+```
+
+Sama seperti sebelumnya, ada tabel yang menjelaskan value dari `flex-wrap`
+
+| Value | Keterangan |
+|----------|----------|
+|`nowrap` (default)|Semua elemen berada dalam satu baris dan tidak dibungkus|
+|`wrap`|Flex items akan dibungkus ke baris baru jika tidak cukup ruang|
+|`wrap-reverse`|Sama seperti `wrap` namun urutan flex items terbalik|
+
+Untuk mempermudah pemahaman terkait valuenya, berikut disajikan dalam bentuk gambar
+
+![flex-wrap](./_assets/images/flex-wrap.png)
+
 ## Tantangan
 
-Tambahkan komentar pada kode CSS di atas untuk memberikan penjelasan tentang kode tersebut.
+Buat 3 card berikut berbaris terbalik dan berada di tengah layar
