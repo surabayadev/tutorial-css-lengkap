@@ -116,10 +116,10 @@ focus: /index.html
 
 Set tampilan layout grid dengan menggunakan properti-properti yang telah dipelajari. Berikut adalah spesifikasi layout yang harus dibuat:
 
-2. Tentukan `grid-template-columns` dengan tiga kolom, di mana kolom pertama dan ketiga memiliki lebar 1fr, dan kolom kedua memiliki lebar 2fr.
-3. Tentukan `grid-template-rows` dengan tiga baris, di mana baris pertama memiliki tinggi 50px, baris kedua 150px, dan baris ketiga 30px.
-4. Tentukan `gap` antar grid item sebesar 10px.
-5. Buat div component dengan class `header`, `sidebar`, `main`, dan `footer` dan berisi teks sesuai dengan nama classnya. Sesuaikan layout grid yang ada di `grid-template-areas` pada file `style.css`.
+1. Tentukan `grid-template-columns` dengan tiga kolom, di mana kolom pertama dan ketiga memiliki lebar 1fr, dan kolom kedua memiliki lebar 2fr.
+2. Tentukan `grid-template-rows` dengan tiga baris, di mana baris pertama memiliki tinggi 50px, baris kedua 150px, dan baris ketiga 30px.
+3. Tentukan `gap` antar grid item sebesar 10px.
+4. Buat div component dengan class `header`, `sidebar`, `main`, dan `footer` dan berisi teks sesuai dengan nama classnya. Sesuaikan layout grid yang ada di `grid-template-areas` pada file `style.css`.
 
 ```
 "header header header"
