@@ -74,8 +74,16 @@ Tambahkan kode css berikut dibawah styles.css
 }
 ```
 
-Sekarang kalian coba perkecil ukuran web browser kalian atau gunakan inspect dan klik device toolbar. dan lihat hasilnya!
+Sekarang kalian coba perkecil ukuran web browser kalian atau gunakan inspect dan klik device toolbar dan lihat hasilnya!
 
 ## Tantangan
 
 Perbaikilah kode css berikut, baik untuk layout yang ditunjukan di layar dan layout responsifnya
+
+Hasil yang diharapkan seperti gambar dibawah ini
+
+![expected_result normal](./_assets/result_challenge_normal.png)
+
+untuk hasil responsifnya
+
+![expected_result responsif](./_assets/result_challenge_responsive.png)

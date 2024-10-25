@@ -79,6 +79,10 @@ Pada `flex-container`, styling yang diberikan sangat berpengaruh terhadap elemen
 
 Buat 3 persegi panjang yang ada pada kode disamping menjadi tersusun berbaris.
 
+Hasil yang diharapkan seperti gambar dibawah ini
+
+![expected_result](./_assets/result_challenge.png)
+
 :::info
 Fokus pada susunan saja, abaikan ukuran aslinya.
 :::
