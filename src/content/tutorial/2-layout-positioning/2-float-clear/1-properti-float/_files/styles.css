@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.image-left {
+    float: left;
+    margin-right: 15px;
+    width: 200px;
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
