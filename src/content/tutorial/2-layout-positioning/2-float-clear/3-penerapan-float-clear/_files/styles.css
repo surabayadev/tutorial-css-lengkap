@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Gaya untuk kolom */
+.column {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    margin-right: 3%;
+    text-align: center;
+}
+
+/* Menggunakan clear untuk menghentikan efek float */
+.clear {
+    clear: both;
+}
