@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    width: 45%;
+    background-color: lightblue;
+    padding: 10px;
+    margin-right: 5%;
+}
+
+.right {
+    float: right;
+    width: 45%;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
