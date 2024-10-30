@@ -12,19 +12,21 @@
   },
   "dependencies": {
     "@tutorialkit/react": "1.1.0",
+    "pnpm": "^9.12.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@astrojs/check": "^0.7.0",
-    "@astrojs/react": "^3.6.0",
+    "@astrojs/react": "^3.6.2",
     "@tutorialkit/astro": "1.1.0",
     "@tutorialkit/theme": "1.1.0",
     "@tutorialkit/types": "1.1.0",
-    "@types/node": "^20.14.6",
-    "@types/react": "^18.3.3",
-    "astro": "^4.15.0",
+    "@types/node": "^20.16.13",
+    "@types/react": "^18.3.11",
+    "astro": "^4.16.6",
     "prettier-plugin-astro": "^0.14.1",
-    "typescript": "^5.4.5"
+    "typescript": "^5.6.3"
   }
 }
