@@ -45,7 +45,7 @@ Hal ini berguna saat kita ingin membuat tampilan di mana gambar dan teks terliha
 </head>
 <body>
     <h1>Contoh Penggunaan Float</h1>
-    <img src="gambar.jpg" alt="Gambar di kiri" class="image-left">
+    <img src="https://avatars.githubusercontent.com/u/8623215" alt="Gambar di kiri" class="image-left">
     <p class="text">
         Ini adalah contoh teks yang mengalir di sebelah gambar. Dengan properti `float`, gambar mengapung di sebelah kiri,
         dan teks ini menyesuaikan di sebelah kanannya. Properti `float` sering digunakan untuk tata letak sederhana
