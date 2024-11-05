@@ -1,0 +1,9 @@
+.box {
+  background-color: aqua;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+
+  /* Tambahkan kode di bawah */
+  border: 4px dotted red;
+}

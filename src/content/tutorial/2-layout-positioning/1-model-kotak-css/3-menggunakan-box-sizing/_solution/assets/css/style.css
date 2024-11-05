@@ -1,0 +1,21 @@
+.cb {
+  background-color: aqua;
+
+  /* Tambahkan kode di bawah */
+  width: 200px;
+  height: 200px;
+  box-sizing: content-box;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.bb {
+  background-color: lime;
+
+  /* Tambahkan kode di bawah */
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-top: 20px;
+}
